@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gifme</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>Gifme</h1>
+		<p>Add some categories and then you can click them to see gifs</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12" id='categories'>
+				<button class="btn btn-secondary btn-category" data-category="dogs">dogs</button>
+				<button class="btn btn-secondary btn-category" data-category="cats">cats</button>
+				<button class="btn btn-secondary btn-category" data-category="birds">birds</button>
+				<button class="btn btn-secondary btn-category" data-category="fish">fish</button>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<form>
+				<div class="input-group">
+					<input type="text" class="form-control category-input" placeholder="Add Category...">
+					<span class="input-group-btn">
+						<button class="btn btn-secondary add-category" type="submit">Add</button>
+					</span>
+				</div>
+				</form>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-xs-12 gifs"></div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="assets/cats.js"></script>
+</body>
+</html>
